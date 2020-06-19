@@ -27,4 +27,10 @@ public class FlightTest {
     public void canGetPlane(){
         assertEquals(plane, flight.getPlane());
     }
+
+    @Test
+    public void flightStartsWithNoPassengers(){
+        assertEquals(0, flight.passengerCount());
+    }
+
 }
