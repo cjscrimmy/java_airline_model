@@ -46,4 +46,8 @@ public class Flight {
     public String getDepartureAirport(){
         return this.departureAirport;
     }
+
+    public void setDepartureAirport(String newDepartureAirport){
+        this.departureAirport = newDepartureAirport;
+    }
 }
