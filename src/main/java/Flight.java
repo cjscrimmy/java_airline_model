@@ -5,12 +5,14 @@ public class Flight {
     private ArrayList<Passenger> passengerList;
     private String flightNumber;
     private String destination;
+    private String departureAirport;
 
-    public Flight(Plane plane, String flightNumber, String destination){
+    public Flight(Plane plane, String flightNumber, String destination, String departureAirport){
         this.plane = plane;
         this.passengerList = new ArrayList<Passenger>();
         this.flightNumber = flightNumber;
         this.destination = destination;
+        this.departureAirport = departureAirport;
     }
 
     public Plane getPlane(){
@@ -39,5 +41,9 @@ public class Flight {
 
     public void setDestination(String newDestination){
         this.destination = newDestination;
+    }
+
+    public String getDepartureAirport(){
+        return this.departureAirport;
     }
 }
