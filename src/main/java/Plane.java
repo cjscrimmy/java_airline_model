@@ -16,4 +16,8 @@ public class Plane {
     public int getTotalWeight(){
         return this.planeType.getTotalWeight();
     }
+
+    public int getWeightReservedForBags(){
+        return getTotalWeight()/2;
+    }
 }
