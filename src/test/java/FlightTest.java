@@ -84,4 +84,9 @@ public class FlightTest {
         flight.setDepartureTime("7pm");
         assertEquals("7pm", flight.getDepartureTime());
     }
+
+    @Test
+    public void allSeatsAvailable(){
+        assertEquals(4, flight.seatsAvailable());
+    }
 }

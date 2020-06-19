@@ -60,4 +60,13 @@ public class Flight {
     public void setDepartureTime(String newDepartureTime){
         this.departureTime = newDepartureTime;
     }
+
+    public int seatsAvailable(){
+        int numberOfSeatsAvailable = plane.getCapacity();
+        if(passengerCount() < plane.getCapacity()){
+            numberOfSeatsAvailable = plane.getCapacity() - passengerCount();
+            return numberOfSeatsAvailable;
+        }
+        return numberOfSeatsAvailable;
+    }
 }
