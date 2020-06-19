@@ -15,4 +15,9 @@ public class PlaneTest {
     public void canGetPlaneType(){
         assertEquals(PlaneType.CESNER, plane.getPlaneType());
     }
+
+    @Test
+    public void canGetCapacityOfPlane(){
+        assertEquals(4, plane.getCapacity());
+    }
 }
