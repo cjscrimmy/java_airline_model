@@ -20,7 +20,7 @@ public class FlightTest {
         passenger3 = new Passenger("Brian", 2);
         passenger4 = new Passenger("Sarah", 2);
         passenger5 = new Passenger("Sergio", 2);
-        flight = new Flight(plane);
+        flight = new Flight(plane, "I25");
     }
 
     @Test
@@ -31,6 +31,11 @@ public class FlightTest {
     @Test
     public void flightStartsWithNoPassengers(){
         assertEquals(0, flight.passengerCount());
+    }
+
+    @Test
+    public void canGetFlightNumber(){
+        assertEquals("I25", flight.getFlightNumber());
     }
 
 }
