@@ -22,7 +22,7 @@ public class FlightTest {
         passenger3 = new Passenger("Brian", 2);
         passenger4 = new Passenger("Sarah", 2);
         passenger5 = new Passenger("Sergio", 2);
-        flight = new Flight(plane, "I25");
+        flight = new Flight(plane, "I25", "Turin");
     }
 
     @Test
@@ -50,6 +50,11 @@ public class FlightTest {
     public void canSetFlightNumber(){
         flight.setFlightNumber("BE17");
         assertEquals("BE17", flight.getFlightNumber());
+    }
+
+    @Test
+    public void canGetDestination(){
+        assertEquals("Turin", flight.getDestination());
     }
 
 }

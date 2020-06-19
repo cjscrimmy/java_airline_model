@@ -4,11 +4,13 @@ public class Flight {
     private Plane plane;
     private ArrayList<Passenger> passengerList;
     private String flightNumber;
+    private String destination;
 
-    public Flight(Plane plane, String flightNumber){
+    public Flight(Plane plane, String flightNumber, String destination){
         this.plane = plane;
         this.passengerList = new ArrayList<Passenger>();
         this.flightNumber = flightNumber;
+        this.destination = destination;
     }
 
     public Plane getPlane(){
@@ -29,5 +31,9 @@ public class Flight {
 
     public void setFlightNumber(String newFlightNumber){
         this.flightNumber = newFlightNumber;
+    }
+
+    public String getDestination(){
+        return this.destination;
     }
 }
