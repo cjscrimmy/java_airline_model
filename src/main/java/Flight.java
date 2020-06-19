@@ -56,4 +56,8 @@ public class Flight {
     public String getDepartureTime(){
         return this.departureTime;
     }
+
+    public void setDepartureTime(String newDepartureTime){
+        this.departureTime = newDepartureTime;
+    }
 }
