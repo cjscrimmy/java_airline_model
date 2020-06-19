@@ -11,6 +11,10 @@ public class Passenger {
         return this.name;
     }
 
+    public void setName(String newName){
+        this.name = newName;
+    }
+
     public int getNumberOfBags(){
         return this.numberOfBags;
     }
