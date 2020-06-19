@@ -62,17 +62,14 @@ public class Flight {
     }
 
     public int seatsAvailable(){
-        int numberOfSeatsAvailable = plane.getCapacity();
-        if(passengerCount() < plane.getCapacity()){
-            numberOfSeatsAvailable = plane.getCapacity() - passengerCount();
-            return numberOfSeatsAvailable;
-        }
-        return numberOfSeatsAvailable;
+        int numberOfSeatAvailable = plane.getCapacity() - passengerCount();
+        return numberOfSeatAvailable;
     }
 
     public void addPassenger(Passenger passenger){
-        if(plane.getCapacity() <= seatsAvailable()) {
+        if(seatsAvailable() > 0) {
             this.passengerList.add(passenger);
         }
+
     }
 }

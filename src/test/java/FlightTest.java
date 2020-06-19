@@ -94,5 +94,27 @@ public class FlightTest {
     public void canAddPassenger(){
         flight.addPassenger(passenger1);
         assertEquals(1,flight.passengerCount());
+        assertEquals(3, flight.seatsAvailable());
+    }
+
+    @Test
+    public void canCompletelyFillFlight(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        flight.addPassenger(passenger4);
+        assertEquals(4, flight.passengerCount());
+        assertEquals(0, flight.seatsAvailable());
+    }
+
+    @Test
+    public void cantAddPassengerToFullFlight(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        flight.addPassenger(passenger4);
+        flight.addPassenger(passenger5);
+        assertEquals(4, flight.passengerCount());
+        assertEquals(0, flight.seatsAvailable());
     }
 }
