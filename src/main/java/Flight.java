@@ -69,4 +69,10 @@ public class Flight {
         }
         return numberOfSeatsAvailable;
     }
+
+    public void addPassenger(Passenger passenger){
+        if(plane.getCapacity() <= seatsAvailable()) {
+            this.passengerList.add(passenger);
+        }
+    }
 }
