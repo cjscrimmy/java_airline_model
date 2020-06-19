@@ -27,7 +27,12 @@ public class PlaneTest {
     }
 
     @Test
-    public void canWeightReservedForPassengersBags(){
+    public void canGetWeightReservedForPassengersBags(){
         assertEquals(50, plane.getWeightReservedForBags());
+    }
+
+    @Test
+    public void canGetWeightOfBagsPerPassenger(){
+        assertEquals(12.0, plane.getWeightOfBagsPerPassenger(), 0.1);
     }
 }

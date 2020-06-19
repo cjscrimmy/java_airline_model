@@ -20,4 +20,8 @@ public class Plane {
     public int getWeightReservedForBags(){
         return getTotalWeight()/2;
     }
+
+    public double getWeightOfBagsPerPassenger(){
+        return Math.floor(getWeightReservedForBags()/getCapacity());
+    }
 }
