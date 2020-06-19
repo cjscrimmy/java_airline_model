@@ -36,4 +36,8 @@ public class Flight {
     public String getDestination(){
         return this.destination;
     }
+
+    public void setDestination(String newDestination){
+        this.destination = newDestination;
+    }
 }

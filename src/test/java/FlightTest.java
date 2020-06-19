@@ -57,4 +57,10 @@ public class FlightTest {
         assertEquals("Turin", flight.getDestination());
     }
 
+    @Test
+    public void canSetDestination(){
+        flight.setDestination("Madrid");
+        assertEquals("Madrid", flight.getDestination());
+    }
+
 }
