@@ -8,12 +8,17 @@ public class PassengerTest {
 
     @Before
     public void setUp(){
-        passenger = new Passenger("Sally");
+        passenger = new Passenger("Sally", 3);
     }
 
     @Test
     public void canGetPassengerName(){
         assertEquals("Sally", passenger.getName());
+    }
+
+    @Test
+    public void canGetNumberOfBags(){
+        assertEquals(3, passenger.getNumberOfBags());
     }
 
 }
