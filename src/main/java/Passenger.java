@@ -18,4 +18,8 @@ public class Passenger {
     public int getNumberOfBags(){
         return this.numberOfBags;
     }
+
+    public void setNumberOfBags(int newNumberOfBags){
+        this.numberOfBags = newNumberOfBags;
+    }
 }
