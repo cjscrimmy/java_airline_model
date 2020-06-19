@@ -15,6 +15,10 @@ public class Flight {
         return this.plane;
     }
 
+    public void setPlane(Plane newPlane){
+        this.plane = newPlane;
+    }
+
     public int passengerCount(){
         return this.passengerList.size();
     }
