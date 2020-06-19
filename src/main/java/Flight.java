@@ -26,4 +26,8 @@ public class Flight {
     public String getFlightNumber(){
         return this.flightNumber;
     }
+
+    public void setFlightNumber(String newFlightNumber){
+        this.flightNumber = newFlightNumber;
+    }
 }

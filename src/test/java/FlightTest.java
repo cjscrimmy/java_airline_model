@@ -46,4 +46,10 @@ public class FlightTest {
         assertEquals("I25", flight.getFlightNumber());
     }
 
+    @Test
+    public void canSetFlightNumber(){
+        flight.setFlightNumber("BE17");
+        assertEquals("BE17", flight.getFlightNumber());
+    }
+
 }
